@@ -35,7 +35,7 @@
 
             if ($validation->run()) {
                $product->update();
-               $this->session->set_flashdata('success', 'Berhasil disimpan');
+               $this->session->set_flashdata('success', 'Berhasil diperbarui');
             }
 
             $data["product"] = $product->getById($id);
